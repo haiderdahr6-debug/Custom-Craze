@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Place Your Order | Custom Craze</title>
+<meta name="description" content="Order your personalised gift from Custom Craze — Cash on Delivery, confirmed instantly over WhatsApp." />
+<link rel="icon" href="images/logo.webp" type="image/webp" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="topbar">
+  📦 Cash on Delivery available &nbsp;|&nbsp; 🚚 Nationwide delivery across Pakistan &nbsp;|&nbsp;
+  <a href="https://wa.me/923042798721" target="_blank" rel="noopener">Chat on WhatsApp: +92 304 2798721</a>
+</div>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <img src="images/logo.webp" alt="Custom Craze logo" />
+      <span class="brand-text">Custom<span> Craze</span></span>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="frames.html">Photo Frames</a></li>
+        <li><a href="mugs.html">Mugs</a></li>
+        <li><a href="tshirts.html">T-Shirts</a></li>
+        <li><a href="gifts.html">Occasions & Gifts</a></li>
+      </ul>
+    </nav>
+    <a href="order.html" class="nav-order-btn">Order Now</a>
+    <button class="menu-toggle" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<div class="page-banner">
+  <h1>🛒 Place Your Order</h1>
+  <p>Fill in your details — we'll open WhatsApp with your order ready to send to us.</p>
+  <div class="breadcrumb"><a href="index.html" style="color:#fff;">Home</a> / Order Now</div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="order-card">
+
+      <div class="cod-note">
+        💵 <strong>Cash on Delivery:</strong> Pay when your order arrives. 🚚 Standard delivery Rs 250 · Express delivery Rs 400 · Nationwide across Pakistan.<br>
+        📝 For some custom orders a small Rs 250 advance may be requested after WhatsApp confirmation, before production — this is deducted from your final bill.
+      </div>
+
+      <form id="orderForm">
+        <div class="form-row">
+          <label for="ofName">Full Name</label>
+          <input type="text" id="ofName" placeholder="e.g. Ayesha Khan" required />
+        </div>
+
+        <div class="form-row">
+          <label for="ofPhone">Phone Number</label>
+          <input type="tel" id="ofPhone" placeholder="03XX-XXXXXXX" required />
+        </div>
+
+        <div class="form-row">
+          <label for="ofAddress">Full Delivery Address</label>
+          <textarea id="ofAddress" placeholder="House no, street, area, landmark..." required></textarea>
+        </div>
+
+        <div class="form-row">
+          <label for="ofCity">City</label>
+          <input type="text" id="ofCity" placeholder="e.g. Multan" required />
+        </div>
+
+        <div class="form-row">
+          <label for="ofProduct">Product You Want</label>
+          <select id="ofProduct">
+            <optgroup label="Photo Frames (Rs 1,299 – Rs 1,399)">
+              <option>365 Days Memory Photo Frame – White 8x12 Inch</option>
+              <option>Best Friends Forever Photo Frame – Black 8x12 Inch</option>
+              <option>Birthday Gift Photo Frame with Calendar Design – Black 8x12 Inch</option>
+              <option>Celebration Photo Collage Frame – Black 8x12 Inch</option>
+              <option>Friendship Photo Frame – Black 8x12 Inch</option>
+              <option>Happy Anniversary Photo Collage Frame – White 8x12 Inch</option>
+              <option>Happy Anniversary Photo Frame – Black 8x12 Inch</option>
+              <option>Happy Birthday Photo Frame – White 8x12 Inch</option>
+              <option>I Love You Couple Photo Frame – Black 8x12 Inch</option>
+              <option>I Love You Photo Frame – Black 8x12 Inch</option>
+              <option>It's Your Day Photo Frame – Black 8x12 Inch</option>
+              <option>Love Couple Photo Frame – Black 8x12 Inch</option>
+              <option>Lover Photo Collage Frame – Black 8x12 Inch</option>
+              <option>My Love Photo Frame – Black 8x12 Inch</option>
+              <option>Personalised Birthday Photo Frame – HBD with Calendar – White 8x12 Inch</option>
+              <option>Personalised Photo Frame with QR-Style Memory Design – Black 8x12 Inch</option>
+              <option>White Memory Photo Frame with Calendar Design – 8x12 Inch</option>
+            </optgroup>
+            <optgroup label="Mugs (Rs 1,300 – Rs 1,400)">
+              <option>Personalized Name Mug – Custom Name Coffee Mug</option>
+              <option>Personalized Black Name Mug</option>
+              <option>Personalized Birthday Calendar Mug</option>
+              <option>Best Brother Forever Mug</option>
+            </optgroup>
+            <optgroup label="T-Shirts">
+              <option>Custom Urdu Text T-Shirt – Personalised Name or Message (Rs 999)</option>
+            </optgroup>
+            <optgroup label="Photo Cushions (Rs 899 – Rs 1,400)">
+              <option>Personalised Anniversary Photo Collage Cushion</option>
+              <option>Personalised Best Friends Photo Cushion – Custom Friendship Gift</option>
+              <option>Personalised Birthday Photo Cushion – Custom Name & Photo</option>
+              <option>Personalised Couple Photo Cushion – Custom Names & Date</option>
+              <option>Personalised Couple Photo Cushion with Love Quote</option>
+              <option>Personalised Heart Photo Collage Cushion – Custom Couple Photos</option>
+              <option>Personalised LOVE Photo Cushion – Custom Couple Photos</option>
+            </optgroup>
+            <option>Something else (I'll describe it in notes)</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="ofQty">Quantity</label>
+          <input type="number" id="ofQty" min="1" value="1" />
+        </div>
+
+        <div class="form-row">
+          <label for="ofNotes">Personalisation Details / Notes</label>
+          <textarea id="ofNotes" placeholder="Names, text, photo description, colour, delivery date..."></textarea>
+        </div>
+
+        <div class="submit-row">
+          <button type="submit" class="btn btn-whatsapp">💬 Confirm Order via WhatsApp</button>
+        </div>
+      </form>
+
+      <p style="text-align:center; font-size:12.5px; color:var(--text-muted); margin-top:16px;">
+        Tapping the button opens WhatsApp with your order filled in — just hit <strong>Send</strong> and we'll confirm it with you right away.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo.webp" alt="Custom Craze" />
+        <p>Custom Craze — personalised gifts made with love. Photo frames, mugs, t-shirts & more, delivered across Pakistan with Cash on Delivery.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="frames.html">Photo Frames</a></li>
+          <li><a href="mugs.html">Mugs</a></li>
+          <li><a href="tshirts.html">T-Shirts</a></li>
+          <li><a href="gifts.html">Occasions & Gifts</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get In Touch</h4>
+        <ul>
+          <li><a href="https://wa.me/923042798721" target="_blank" rel="noopener">💬 WhatsApp: +92 304 2798721</a></li>
+          <li><a href="mailto:faisalsadiqi38@gmail.com">✉️ faisalsadiqi38@gmail.com</a></li>
+          <li><a href="order.html">Place an Order</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © <span class="year"></span> Custom Craze. All rights reserved. Cash on Delivery available across Pakistan.
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/923042798721" target="_blank" rel="noopener" class="wa-float" aria-label="Chat on WhatsApp">💬</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
