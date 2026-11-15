@@ -1,23 +1,27 @@
 /* ===========================================================
    Custom Craze — shared stylesheet
-   Light, professional theme (cream / navy / gold)
+   Professional theme (light blue / deep navy / cream / soft pink accents)
    =========================================================== */
 
 :root {
-  --navy: #14213d;
-  --navy-light: #1f3059;
-  --gold: #c9a227;
-  --gold-light: #e8c766;
-  --cream: #faf7f1;
-  --cream-dark: #f1ebdd;
+  --navy: #17324f;
+  --navy-light: #294d70;
+  --gold: #c6a66a;
+  --gold-light: #e7d4a8;
+  --cream: #fffbf6;
+  --cream-dark: #f2ede5;
   --white: #ffffff;
-  --text: #2a2a2a;
-  --text-muted: #6b6b6b;
-  --border: #e7e0d1;
+  --text: #263747;
+  --text-muted: #687987;
+  --border: #dce7ef;
   --radius: 14px;
-  --shadow: 0 6px 20px rgba(20, 33, 61, 0.08);
-  --shadow-hover: 0 10px 28px rgba(20, 33, 61, 0.14);
+  --shadow: 0 6px 22px rgba(23, 50, 79, 0.08);
+  --shadow-hover: 0 12px 30px rgba(23, 50, 79, 0.14);
   --wa-green: #25d366;
+  --blue-light: #eaf4fb;
+  --blue-soft: #dcecf7;
+  --pink: #d994ad;
+  --pink-light: #f8eaf0;
 }
 
 * { box-sizing: border-box; }
@@ -46,7 +50,7 @@ a { color: inherit; text-decoration: none; }
 /* ---------- Top info bar ---------- */
 .topbar {
   background: var(--navy);
-  color: #e9e2cc;
+  color: var(--blue-light);
   font-size: 13px;
   text-align: center;
   padding: 7px 12px;
@@ -134,7 +138,7 @@ nav.main-nav a.active {
 /* ---------- Hero / Banner ---------- */
 .hero {
   background: var(--navy);
-  background: radial-gradient(circle at 70% 20%, #1c2d52 0%, var(--navy) 60%);
+  background: radial-gradient(circle at 78% 18%, #315b7e 0%, var(--navy) 62%);
   color: #fff;
   padding: 56px 20px 64px;
 }
@@ -164,7 +168,7 @@ nav.main-nav a.active {
   margin: 0 0 16px;
 }
 .hero-text p {
-  color: #cfd6e6;
+  color: #d9e8f3;
   font-size: 16px;
   max-width: 480px;
   margin-bottom: 26px;
@@ -227,7 +231,7 @@ nav.main-nav a.active {
 .section { padding: 60px 0; }
 .section-head { text-align: center; margin-bottom: 38px; }
 .section-head .kicker {
-  color: var(--gold);
+  color: #bd7892;
   font-weight: 700;
   letter-spacing: 1.5px;
   font-size: 12px;
@@ -258,13 +262,14 @@ nav.main-nav a.active {
   box-shadow: var(--shadow);
   transition: transform 0.2s, box-shadow 0.2s;
 }
-.cat-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+.cat-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); border-color: #e7c4d1; }
 .cat-icon {
   width: 64px;
   height: 64px;
   margin: 0 auto 16px;
   border-radius: 50%;
-  background: var(--cream-dark);
+  background: var(--pink-light);
+  color: var(--navy);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -272,7 +277,7 @@ nav.main-nav a.active {
 }
 .cat-card h3 { color: var(--navy); margin: 0 0 8px; font-size: 18px; }
 .cat-card p { color: var(--text-muted); font-size: 14px; margin: 0 0 16px; }
-.cat-card a.link { color: var(--gold); font-weight: 700; font-size: 14px; }
+.cat-card a.link { color: #bd7892; font-weight: 700; font-size: 14px; }
 
 /* ---------- Product cards ---------- */
 .product-card {
@@ -285,10 +290,10 @@ nav.main-nav a.active {
   flex-direction: column;
   transition: transform 0.2s, box-shadow 0.2s;
 }
-.product-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+.product-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); border-color: #e7c4d1; }
 .product-thumb {
   height: 170px;
-  background: linear-gradient(135deg, var(--cream-dark), #fff);
+  background: linear-gradient(135deg, var(--blue-light), var(--cream));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -348,7 +353,7 @@ nav.main-nav a.active {
   flex-wrap: wrap;
 }
 .deal-banner h3 { color: var(--gold-light); font-size: 22px; margin: 0 0 8px; }
-.deal-banner p { color: #cfd6e6; margin: 0; max-width: 480px; }
+.deal-banner p { color: #d9e8f3; margin: 0; max-width: 480px; }
 
 /* ---------- How it works ---------- */
 .steps {
@@ -367,7 +372,7 @@ nav.main-nav a.active {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: var(--gold);
+  background: var(--pink-light);
   color: var(--navy);
   font-weight: 800;
   display: flex;
@@ -412,12 +417,13 @@ nav.main-nav a.active {
 .form-row select:focus,
 .form-row textarea:focus {
   outline: none;
-  border-color: var(--gold);
+  border-color: var(--pink);
+  box-shadow: 0 0 0 3px rgba(217, 148, 173, 0.12);
   background: #fff;
 }
 .cod-note {
-  background: var(--cream-dark);
-  border: 1px dashed var(--gold);
+  background: var(--blue-light);
+  border: 1px dashed #b9d2e4;
   border-radius: 10px;
   padding: 12px 14px;
   font-size: 13px;
@@ -434,7 +440,7 @@ nav.main-nav a.active {
 /* ---------- Footer ---------- */
 footer.site-footer {
   background: var(--navy);
-  color: #cfd6e6;
+  color: #d9e8f3;
   padding: 44px 0 20px;
   margin-top: 40px;
 }
@@ -486,7 +492,7 @@ footer.site-footer {
   text-align: center;
 }
 .page-banner h1 { margin: 0 0 8px; font-size: 28px; }
-.page-banner p { color: #cfd6e6; margin: 0; }
+.page-banner p { color: #d9e8f3; margin: 0; }
 .breadcrumb { font-size: 13px; color: var(--gold-light); margin-top: 10px; }
 
 /* ---------- Toast (order confirmation) ---------- */
@@ -527,7 +533,7 @@ footer.site-footer {
     top: 66px;
     left: 0;
     right: 0;
-    background: #fff;
+    background: var(--white);
     border-bottom: 1px solid var(--border);
     box-shadow: var(--shadow);
     padding: 10px 20px 16px;
@@ -551,5 +557,4 @@ footer.site-footer {
   .footer-grid { grid-template-columns: 1fr; }
   .deal-banner { flex-direction: column; text-align: center; }
   .order-card { padding: 24px 18px; }
-  }
-  
+}
